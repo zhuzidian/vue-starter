@@ -2,9 +2,9 @@
   <v-container class="grey lighten-5">
     <v-row style="height: 60px">
       <v-col cols="12">
-        <h3 class="d-inline-block">アカウント一覧</h3>
+        <h3 class="d-inline-block">お知らせ一覧</h3>
 
-        <v-btn color="primary" class="ml-16">新しいアカウントを作る</v-btn>
+        <v-btn color="primary" class="ml-16">新しいお知らせを作る</v-btn>
       </v-col>
     </v-row>
     <v-row>
@@ -125,8 +125,6 @@
         </form>
       </v-col>
     </v-row>
-
-    
   </v-container>
 </template>
 
@@ -134,7 +132,7 @@
 import { date } from "@/utils/validator"
 
 export default {
-  name: "AccountList",
+  name: "NotificationList",
 
   data() {
     return {

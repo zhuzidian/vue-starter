@@ -2,7 +2,7 @@ import Vue from "vue"
 import VueRouter from "vue-router"
 import Home from "@/views/Home.vue"
 import Login from "@/views/Login.vue"
-import AccountList from "@/views/account/AccountList.vue"
+import NotificationList from "@/views/notification/NotificationList.vue"
 
 Vue.use(VueRouter)
 
@@ -18,9 +18,9 @@ const routes = [
     component: Login,
   },
   {
-    path: "/account/list",
-    name: "AccountList",
-    component: AccountList,
+    path: "/notification/list",
+    name: "NotificationList",
+    component: NotificationList,
   },
   // {
   //   path: "/about",

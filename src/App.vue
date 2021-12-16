@@ -56,8 +56,8 @@ export default {
       menuList: [
         { title: "トップ", icon: "mdi-home", path: "/home" },
         { title: "組織一覧", icon: "mdi-account-multiple", path: "" },
-        { title: "アカウント一覧", icon: "mdi-account", path: "/account/list" },
-        { title: "お知らせ一覧", icon: "mdi-information", path: "" },
+        { title: "アカウント一覧", icon: "mdi-account", path: "" },
+        { title: "お知らせ一覧", icon: "mdi-information", path: "/notification/list" },
       ],
     }
   },

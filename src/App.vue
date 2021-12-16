@@ -13,15 +13,13 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer app v-model="drawer" v-if="account">
-      <v-list
-        dense
-        nav
-      >
+    <v-navigation-drawer app stateless v-model="drawer" v-if="account">
+      <v-list nav dense>
         <v-list-item
           v-for="menu in menuList"
           :key="menu.title"
           link
+          :to="menu.path"
         >
           <v-list-item-icon>
             <v-icon>{{ menu.icon }}</v-icon>
@@ -56,10 +54,10 @@ export default {
       drawer: true,
 
       menuList: [
-        { title: "トップ", icon: "mdi-home" },
-        { title: "組織一覧", icon: "mdi-account-multiple" },
-        { title: "アカウント一覧", icon: "mdi-account" },
-        { title: "お知らせ一覧", icon: "mdi-information" },
+        { title: "トップ", icon: "mdi-home", path: "/home" },
+        { title: "組織一覧", icon: "mdi-account-multiple", path: "" },
+        { title: "アカウント一覧", icon: "mdi-account", path: "/account/list" },
+        { title: "お知らせ一覧", icon: "mdi-information", path: "" },
       ],
     }
   },
@@ -84,5 +82,9 @@ export default {
 #app.theme--light.v-application {
   background-color: #fafafa;
   color: #262626;
+}
+
+.v-input--dense > .v-input__append-outer {
+  margin-top: 0 !important;
 }
 </style>

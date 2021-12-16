@@ -7,6 +7,7 @@ import "roboto-fontface/css/roboto/roboto-fontface.css"
 import "@mdi/font/css/materialdesignicons.css"
 
 import "./plugins/vuelidate"
+import "./plugins/dayjs"
 
 Vue.config.productionTip = false
 
